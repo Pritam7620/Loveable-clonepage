@@ -14,18 +14,18 @@ body{
     #fe90e7,
     #fd3499
   );
- 
+
 }
-
-
-
 
 a{
-
+font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-color: aliceblue;
+color: #fcfbf8;
 }
 
+a:hover{
+  color: #fcfbf8cc;
+}
 .logo{
 height: 24px;
 
@@ -40,10 +40,15 @@ align-items: center;
 }
 
 .head-left{
-  margin-left: 60px;
+
 display: flex;
+align-items: center;
 gap: 40px;
   color: rgb(234, 228, 228);
+ 
+}
+.head-left a img:hover{
+  opacity: 0.7;
 }
 
 .head-right{
@@ -60,8 +65,12 @@ gap: 40px;
   
 }
 #get{
-  background-color: aliceblue;
+  background-color:#fcfbf8;
   color: black;
+}
+
+#get:hover{
+background-color: #fcfbf833;
 }
 
 main{
@@ -107,5 +116,15 @@ margin-top: 20px;
   color: aliceblue;
   font-size:200%;
   margin-top: 40px;
+
+}
+
+.search-lovable{
+
+  position: absolute;
+}
+ 
+.search-lovable  input{
+position: relative;
 
 }
