@@ -4,18 +4,19 @@
   box-sizing: border-box;
 }
 
-body{
 
+body {
   min-height: 100vh;
   background: linear-gradient(
     to bottom,
-    #0d141d,
+    #243143,
     #4b75e9,
     #fe90e7,
     #fd3499
   );
-
+  font-family: "Poppins", sans-serif;
 }
+
 
 a{
 font-family: Arial, Helvetica, sans-serif;
@@ -27,7 +28,7 @@ a:hover{
   color: #fcfbf8cc;
 }
 .logo{
-height: 24px;
+height: 3vh;
 
 }
 header{
@@ -36,18 +37,26 @@ justify-content: space-between;
 background-color: rgb(37, 33, 33);
 height: 60px;
 align-items: center;
+width: 100%;
+top: 0;
+position: fixed;
+  z-index: 9999;
+backdrop-filter: blur(10px);
 
 }
 
 .head-left{
-
+margin-left: 8vh;
 display: flex;
 align-items: center;
-gap: 40px;
+gap: 6vh;
   color: rgb(234, 228, 228);
  
 }
 .head-left a img:hover{
+  opacity: 0.7;
+}
+.head-left p:hover{
   opacity: 0.7;
 }
 
@@ -58,11 +67,10 @@ gap: 40px;
 .head-right a{
 
   border: 1px solid rgb(163, 160, 160);
-  padding: 6px 14px;
- margin: 0px 4px;
+  padding: 1vh 2vh;
+ margin: 0vh 0.7vh;
  border-radius: 6px;
 
-  
 }
 #get{
   background-color:#fcfbf8;
@@ -126,5 +134,31 @@ margin-top: 20px;
  
 .search-lovable  input{
 position: relative;
+
+}
+
+.head-left p{
+font-family: Arial, Helvetica, sans-serif;
+  color: #fcfbf8;
+  cursor: pointer;
+}
+
+.head-left p i{
+  transition: rotate 0.2s ease-in-out;
+} 
+.head-left p:hover i{
+  rotate: 180deg;
+}
+
+
+.pricing{
+display: flex;
+flex-direction: column;
+
+}
+
+.pricingdiv2 select{
+margin-top: 20px;
+
 
 }
