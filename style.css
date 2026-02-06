@@ -41,7 +41,6 @@ width: 100%;
 top: 0;
 position: fixed;
   z-index: 9999;
-backdrop-filter: blur(10px);
 
 }
 
@@ -134,7 +133,60 @@ margin-top: 20px;
  
 .search-lovable  input{
 position: relative;
+font-size: larger;
+background-color: #2a2626;
+}
 
+.search-lovable {
+position: relative;
+top: 40px;
+left: 20px;
+display: flex;
+justify-content: space-between;
+
+}
+
+.search-lovable label{
+color: #c6c3b9;
+  position: absolute;
+  bottom: 15vh;
+  left: 4vh;
+ transition: all 0.2s ease-in-out;
+ 
+}
+
+
+.search-lovable input:focus + label{
+
+  font-size: 12px;
+  opacity: 0.4;
+color: transparent;
+}
+
+.search-lovable i{
+position: relative;
+bottom:5vh;
+left: 4vh;
+cursor: pointer;
+font-size: medium;
+color: #6e7072;
+
+
+}
+
+.input-element i{
+position: relative;
+display: flex;
+top: 15vh;
+left: -7vh;
+
+}
+
+
+.input-element a{
+ position: relative;
+top: 18vh;
+right: 17vh; 
 }
 
 .head-left p{
@@ -162,3 +214,59 @@ margin-top: 20px;
 
 
 }
+
+
+.solution-main{
+  position: relative;
+}
+.solution-child{
+position: absolute;
+display: none;
+ background-color: #1b1919;
+ gap: 12px;
+ top: 5.5vh;
+  padding: 16px;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+}
+
+.solution-main p:hover + .solution-child{
+display: flex;
+flex-direction: column;
+background-color: #1b1919;
+ border: 1px solid rgb(165, 159, 159);
+}
+.resources-container{
+  position: relative;
+}
+.resources-options{
+  position: absolute;
+  top: 5.5vh;
+  display: none;
+  background-color: #1b1919;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 20px;
+  width: 250px;
+  height: 150px;
+}
+
+
+
+.resources-container p:hover + .resources-options {
+  display: flex;
+  flex-direction: column;
+   
+   border: 1px solid rgb(165, 159, 159);
+  
+}
+.resources-container p i {
+  transition: rotate 150ms ease-in-out;
+}
+
+.resources-container p:hover i {
+  rotate: 180deg;
+}
+
+.proto{display: flex;}
